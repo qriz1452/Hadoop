@@ -70,7 +70,7 @@ sudo chown hduser:hadoop -R /var/log/hadoop
 
 
 
-#Update core-site.xml
+#Update core-site.xml                                           # ALL XML CHANGE MUST BE IN BETWEEN <configuration>   ADD YOUR CHANGE  HERE i.e <prop... tags> </configuration> 
 nano core-site.xml
 <property>
   <name>hadoop.tmp.dir</name>
@@ -98,8 +98,8 @@ nano mapred-site.xml
    <value>yarn</value>
  </property>
 
-
-#Update hdfs-site.xml
+                
+ #Update hdfs-site.xml
 sudo mkdir -p /usr/local/hadoop_store/hdfs/namenode
 sudo mkdir -p /usr/local/hadoop_store/hdfs/datanode
 sudo chown -R hduser:hadoop /usr/local/hadoop_store
