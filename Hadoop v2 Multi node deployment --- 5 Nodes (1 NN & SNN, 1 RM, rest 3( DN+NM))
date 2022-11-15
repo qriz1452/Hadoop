@@ -1,0 +1,3 @@
+# Create and login to VM
+
+sudo apt update && sudo apt dist-upgrade     # updating + ONLY distribution update not whole OS Update
